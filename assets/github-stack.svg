@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="170" viewBox="0 0 420 170" role="img" aria-labelledby="t d">
+  <title id="t">Languages and technical stack</title>
+  <desc id="d">Light technical mix card for Julian Passebecq showing coding and data engineering technologies.</desc>
+  <rect x="1" y="1" width="418" height="168" rx="14" fill="#ffffff" stroke="#d8e2e6"/>
+  <text x="20" y="31" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#2563eb">Languages &amp; stack</text>
+  <rect x="20" y="49" width="380" height="10" rx="5" fill="#eef3f5"/>
+  <rect x="20" y="49" width="83" height="10" rx="5" fill="#3776ab"/>
+  <rect x="103" y="49" width="76" height="10" fill="#0b7fca"/>
+  <rect x="179" y="49" width="68" height="10" fill="#f2c811"/>
+  <rect x="247" y="49" width="61" height="10" fill="#e25a1c"/>
+  <rect x="308" y="49" width="49" height="10" fill="#e33b31"/>
+  <rect x="357" y="49" width="43" height="10" rx="5" fill="#ef7d43"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" fill="#344a54">
+    <circle cx="24" cy="82" r="4" fill="#3776ab"/><text x="34" y="86"><tspan font-weight="700">Python</tspan> · analytics / automation</text>
+    <circle cx="221" cy="82" r="4" fill="#0b7fca"/><text x="231" y="86"><tspan font-weight="700">SQL</tspan> · modeling / BI</text>
+    <circle cx="24" cy="107" r="4" fill="#f2c811"/><text x="34" y="111"><tspan font-weight="700">DAX</tspan> · semantic models</text>
+    <circle cx="221" cy="107" r="4" fill="#e25a1c"/><text x="231" y="111"><tspan font-weight="700">PySpark</tspan> · pipelines</text>
+    <circle cx="24" cy="132" r="4" fill="#e33b31"/><text x="34" y="136"><tspan font-weight="700">React / JS</tspan> · interfaces</text>
+    <circle cx="221" cy="132" r="4" fill="#ef7d43"/><text x="231" y="136"><tspan font-weight="700">D3</tspan> · visual data</text>
+  </g>
+  <text x="20" y="158" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" fill="#8a9aa2">Portfolio-oriented stack · not a GitHub byte-share metric</text>
+</svg>
