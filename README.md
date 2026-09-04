@@ -7,22 +7,22 @@
 <p align="center">
   <a href="https://datapassj.com/"><b>datapassj.com</b></a> ·
   <a href="https://datapassj.com/portfolio.pdf">Portfolio PDF</a> ·
-  <a href="https://www.linkedin.com/in/julian-passebecq/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/julian-p95/">LinkedIn</a>
 </p>
 
 ---
 
 <h2 align="center">Analytics → BI · SQL → Cloud</h2>
 
-<table align="center">
-  <tr>
-    <td align="center" width="150">📊<br><b>Analytics</b></td>
-    <td align="center" width="35">→</td>
-    <td align="center" width="190">📈 &nbsp; 🗄️<br><b>BI · SQL</b></td>
-    <td align="center" width="35">→</td>
-    <td align="center" width="150">☁️<br><b>Cloud</b></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://portfoliomainvj1.netlify.app/">
+    <img src="./assets/project-radar.svg" width="100%" alt="Interactive project radar — data, BI, cloud and engineering projects" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://portfoliomainvj1.netlify.app/"><b>Open interactive project radar</b></a>
+</p>
 
 <p align="center"><sub>Power BI · SQL · Fabric · Databricks · PySpark · Azure</sub></p>
 
