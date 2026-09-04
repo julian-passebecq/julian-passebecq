@@ -19,20 +19,19 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="150">
-      <img src="https://cdn.simpleicons.org/googleanalytics/E37400" width="42" alt="Analytics"><br>
+    <td align="center" width="170">
+      <img src="https://img.shields.io/badge/Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white" alt="Analytics"><br>
       <b>Analytics</b>
     </td>
     <td align="center" width="35">→</td>
-    <td align="center" width="180">
-      <img src="https://cdn.simpleicons.org/powerbi/F2C811" width="42" alt="Power BI">
-      &nbsp;
-      <img src="https://cdn.simpleicons.org/microsoftsqlserver/CC2927" width="42" alt="SQL"><br>
+    <td align="center" width="230">
+      <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=000000" alt="Power BI">
+      <img src="https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL"><br>
       <b>BI · SQL</b>
     </td>
     <td align="center" width="35">→</td>
-    <td align="center" width="150">
-      <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" width="42" alt="Cloud"><br>
+    <td align="center" width="170">
+      <img src="https://img.shields.io/badge/Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Cloud"><br>
       <b>Cloud</b>
     </td>
   </tr>
