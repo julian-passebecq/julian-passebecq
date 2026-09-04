@@ -25,11 +25,11 @@
 <h3 align="center">GitHub snapshot</h3>
 
 <p align="center">
-  <img height="155" src="https://github-readme-stats.vercel.app/api?username=julian-passebecq&show_icons=true&hide_border=false&border_radius=12&bg_color=ffffff&title_color=2563eb&text_color=263238&icon_color=5b8294&include_all_commits=true&hide_rank=true" alt="Julian Passebecq GitHub statistics" />
-  <img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=julian-passebecq&layout=compact&langs_count=8&hide_border=false&border_radius=12&bg_color=ffffff&title_color=2563eb&text_color=263238" alt="Languages used across Julian Passebecq GitHub repositories" />
+  <img width="405" src="./assets/github-overview.svg" alt="Julian Passebecq GitHub profile snapshot" />
+  <img width="405" src="./assets/github-stack.svg" alt="Julian Passebecq languages and technical stack" />
 </p>
 
-<p align="center"><sub>Repository activity and language mix from public GitHub projects.</sub></p>
+<p align="center"><sub>Local SVG cards for reliable rendering on GitHub.</sub></p>
 
 ---
 
