@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Julian Passebecq project radar</title>
+  <desc id="desc">Static GitHub profile preview of a data, BI and cloud project portfolio. Click the image in the README to open the interactive portfolio.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#16303d" flood-opacity="0.09"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#16303d" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fafb"/>
+      <stop offset="1" stop-color="#eef3f5"/>
+    </linearGradient>
+    <style>
+      text { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .title { fill:#17242c; font-weight:700; font-size:20px; }
+      .sub { fill:#82939c; font-weight:700; font-size:10px; letter-spacing:1.4px; }
+      .small { fill:#607680; font-size:11px; }
+      .node { fill:#ffffff; stroke:#cfdbdf; stroke-width:1.5; filter:url(#soft); }
+      .line { fill:none; stroke:#bfd0d7; stroke-width:1.35; }
+      .guide { fill:none; stroke:#e1e9ec; stroke-width:1; }
+      .route-blue { stroke:#7fa6b8; }
+      .route-green { stroke:#84a79a; }
+      .dot-blue { fill:#4f8096; }
+      .dot-green { fill:#6f9386; }
+      .chip { fill:#f6f9fa; stroke:#dce6e9; stroke-width:1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" rx="28" fill="url(#bg)"/>
+
+  <!-- main radar card -->
+  <rect x="20" y="20" width="885" height="610" rx="24" fill="#fff" stroke="#dce5e8" filter="url(#shadow)"/>
+
+  <!-- radar guides -->
+  <circle cx="455" cy="325" r="245" class="line"/>
+  <polygon points="455,150 607,238 607,412 455,500 303,412 303,238" class="guide"/>
+  <polygon points="455,205 559,265 559,385 455,445 351,385 351,265" class="guide"/>
+  <polygon points="455,250 520,288 520,362 455,400 390,362 390,288" class="guide"/>
+
+  <!-- routes -->
+  <line x1="455" y1="145" x2="455" y2="276" class="line route-blue"/>
+  <line x1="685" y1="238" x2="501" y2="290" class="line route-blue"/>
+  <line x1="685" y1="412" x2="510" y2="362" class="line route-green"/>
+  <line x1="455" y1="505" x2="500" y2="368" class="line route-green"/>
+  <line x1="225" y1="412" x2="397" y2="360" class="line route-blue"/>
+  <line x1="225" y1="238" x2="398" y2="356" class="line route-blue"/>
+
+  <circle cx="455" cy="216" r="3.5" class="dot-blue"/>
+  <circle cx="455" cy="252" r="3.5" class="dot-blue"/>
+  <circle cx="588" cy="266" r="3.5" class="dot-blue"/>
+  <circle cx="622" cy="256" r="3.5" class="dot-blue"/>
+  <circle cx="593" cy="386" r="3.5" class="dot-green"/>
+  <circle cx="623" cy="397" r="3.5" class="dot-green"/>
+  <circle cx="496" cy="411" r="3.5" class="dot-green"/>
+  <circle cx="390" cy="381" r="3.5" class="dot-blue"/>
+  <circle cx="359" cy="390" r="3.5" class="dot-blue"/>
+
+  <!-- outer 01 D3 -->
+  <circle cx="455" cy="545" r="48" class="node"/>
+  <text x="455" y="552" text-anchor="middle" font-size="29" font-weight="800" fill="#ef7d43">D3</text>
+  <text x="455" y="607" text-anchor="middle" class="title" font-size="15">D3 Eco Site</text>
+  <text x="455" y="624" text-anchor="middle" class="sub">VISUAL DATA</text>
+
+  <!-- outer 02 ML -->
+  <circle cx="190" cy="205" r="48" class="node"/>
+  <circle cx="174" cy="196" r="6" fill="#f39b3d"/>
+  <circle cx="191" cy="182" r="6" fill="#3d9dc8"/>
+  <circle cx="207" cy="200" r="6" fill="#3d9dc8"/>
+  <circle cx="194" cy="219" r="6" fill="#f39b3d"/>
+  <line x1="179" y1="192" x2="186" y2="186" stroke="#597983" stroke-width="2"/>
+  <line x1="196" y1="187" x2="202" y2="196" stroke="#597983" stroke-width="2"/>
+  <line x1="204" y1="205" x2="198" y2="215" stroke="#597983" stroke-width="2"/>
+  <line x1="188" y1="214" x2="179" y2="201" stroke="#597983" stroke-width="2"/>
+  <line x1="180" y1="196" x2="201" y2="200" stroke="#597983" stroke-width="2"/>
+  <text x="190" y="269" text-anchor="middle" class="title" font-size="15">ML / Data Science</text>
+  <text x="190" y="286" text-anchor="middle" class="sub">PYTHON · ML</text>
+
+  <!-- outer 03 Architecture -->
+  <circle cx="455" cy="104" r="48" class="node"/>
+  <path d="M441 133 L459 76 L475 133 L463 133 L459 118 L447 118 L443 133Z" fill="#0877c9"/>
+  <path d="M459 76 L475 133 L465 133 L451 111Z" fill="#39b7e8" opacity="0.95"/>
+  <text x="455" y="166" text-anchor="middle" class="title" font-size="15">Architecture Web</text>
+  <text x="455" y="183" text-anchor="middle" class="sub">CLOUD ARCHITECTURE</text>
+
+  <!-- outer 04 Microsoft news -->
+  <circle cx="720" cy="435" r="48" class="node"/>
+  <rect x="700" y="415" width="17" height="17" fill="#f35325"/>
+  <rect x="722" y="415" width="17" height="17" fill="#81bc06"/>
+  <rect x="700" y="437" width="17" height="17" fill="#05a6f0"/>
+  <rect x="722" y="437" width="17" height="17" fill="#ffba08"/>
+  <text x="720" y="498" text-anchor="middle" class="title" font-size="15">Microsoft / Cloud News</text>
+  <text x="720" y="515" text-anchor="middle" class="sub">PRODUCT WATCH</text>
+
+  <!-- outer 05 SQL trainer -->
+  <circle cx="190" cy="435" r="48" class="node"/>
+  <ellipse cx="190" cy="421" rx="20" ry="8" fill="#0e83c7" opacity="0.15" stroke="#0e83c7" stroke-width="2"/>
+  <path d="M170 421 v23 c0 5 9 9 20 9s20-4 20-9v-23" fill="none" stroke="#0e83c7" stroke-width="2.5"/>
+  <path d="M181 433 l-8 7 8 7 M199 433 l8 7-8 7" fill="none" stroke="#f39b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="190" y="498" text-anchor="middle" class="title" font-size="15">LeetCode Trainer</text>
+  <text x="190" y="515" text-anchor="middle" class="sub">SQL · DATA ENGINEERING</text>
+
+  <!-- outer 06 developer watch -->
+  <circle cx="720" cy="205" r="48" class="node"/>
+  <path d="M698 205 l12-10 v20z M710 195 l23-16 v52 l-23-16z M733 179 l9 5v42l-9 5z" fill="#0b7fca"/>
+  <text x="720" y="269" text-anchor="middle" class="title" font-size="15">Code Updates Site</text>
+  <text x="720" y="286" text-anchor="middle" class="sub">DEVELOPER WATCH</text>
+
+  <!-- center portfolio -->
+  <circle cx="455" cy="335" r="42" class="node"/>
+  <rect x="432" y="322" width="46" height="30" rx="5" fill="none" stroke="#315666" stroke-width="3"/>
+  <path d="M442 322 v-7 c0-6 5-10 11-10h4c6 0 11 4 11 10v7" fill="none" stroke="#315666" stroke-width="3"/>
+  <path d="M432 334 c12 6 34 6 46 0" fill="none" stroke="#315666" stroke-width="2"/>
+  <rect x="451" y="333" width="8" height="6" rx="1.5" fill="#315666"/>
+  <text x="455" y="392" text-anchor="middle" class="title" font-size="14">Main Portfolio</text>
+
+  <!-- competency nodes -->
+  <rect x="430" y="256" width="50" height="50" rx="15" class="node"/>
+  <path d="M441 295 L455 267 L470 295 L461 295 L455 282 L449 295Z" fill="#0877c9"/>
+
+  <rect x="365" y="360" width="50" height="50" rx="15" class="node"/>
+  <ellipse cx="390" cy="376" rx="13" ry="5" fill="#0b7fca"/>
+  <path d="M377 376v17c0 4 6 7 13 7s13-3 13-7v-17" fill="#0b7fca" opacity="0.85"/>
+  <text x="390" y="393" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">SQL</text>
+
+  <rect x="495" y="360" width="50" height="50" rx="15" class="node"/>
+  <rect x="508" y="382" width="7" height="13" rx="2" fill="#f2c811"/>
+  <rect x="517" y="374" width="7" height="21" rx="2" fill="#e7b40f"/>
+  <rect x="526" y="365" width="7" height="30" rx="2" fill="#d99b00"/>
+
+  <!-- airflow accent -->
+  <circle cx="455" cy="426" r="25" fill="#fff" stroke="#d4e0e4" filter="url(#soft)"/>
+  <path d="M455 425 L449 406 Q455 401 461 406 L458 425Z" fill="#00a6c7"/>
+  <path d="M457 426 L476 420 Q481 426 476 432 L458 429Z" fill="#2468a2"/>
+  <path d="M455 428 L461 447 Q455 452 449 447 L452 429Z" fill="#48a16f"/>
+  <path d="M453 426 L434 432 Q429 426 434 420 L452 423Z" fill="#d95c5c"/>
+  <circle cx="455" cy="426" r="4" fill="#fff" stroke="#536e79"/>
+
+  <!-- right business card -->
+  <rect x="930" y="20" width="250" height="610" rx="24" fill="#fff" stroke="#dce5e8" filter="url(#shadow)"/>
+  <rect x="952" y="48" width="48" height="48" rx="14" fill="#f6f9fa" stroke="#dce6e9"/>
+  <text x="976" y="78" text-anchor="middle" font-weight="700" font-size="16" fill="#4f7585">JP</text>
+  <text x="1017" y="70" class="title" font-size="17">Julian Passebecq</text>
+  <text x="1017" y="89" class="small">Data Engineering · BI · Cloud</text>
+  <line x1="952" y1="116" x2="1158" y2="116" stroke="#e3eaed"/>
+
+  <rect x="952" y="136" width="206" height="54" rx="14" class="chip"/>
+  <rect x="966" y="151" width="24" height="24" rx="7" fill="#fff7cf"/>
+  <rect x="972" y="163" width="4" height="8" rx="1" fill="#f2c811"/>
+  <rect x="978" y="157" width="4" height="14" rx="1" fill="#e7b40f"/>
+  <rect x="984" y="152" width="4" height="19" rx="1" fill="#d99b00"/>
+  <text x="1002" y="157" font-size="12" font-weight="700" fill="#425c67">BI</text>
+  <text x="1002" y="175" font-size="10" fill="#778b94">Power BI · DAX · Insights</text>
+
+  <rect x="952" y="200" width="206" height="54" rx="14" class="chip"/>
+  <rect x="966" y="215" width="24" height="24" rx="7" fill="#eaf5fc"/>
+  <path d="M971 233 L978 218 L986 233 L981 233 L978 226 L975 233Z" fill="#0877c9"/>
+  <text x="1002" y="221" font-size="12" font-weight="700" fill="#425c67">Cloud</text>
+  <text x="1002" y="239" font-size="10" fill="#778b94">Azure · Architecture · Data</text>
+
+  <rect x="952" y="264" width="206" height="54" rx="14" class="chip"/>
+  <rect x="966" y="279" width="24" height="24" rx="7" fill="#eef7fb"/>
+  <ellipse cx="978" cy="286" rx="7" ry="3" fill="#0b7fca"/>
+  <path d="M971 286v10c0 2 3 4 7 4s7-2 7-4v-10" fill="#0b7fca"/>
+  <text x="1002" y="285" font-size="12" font-weight="700" fill="#425c67">Analyst / Data</text>
+  <text x="1002" y="303" font-size="10" fill="#778b94">SQL · Models · Decisions</text>
+
+  <text x="952" y="350" class="sub">CODING · DATA STACK</text>
+  <g>
+    <rect x="952" y="365" width="60" height="42" rx="12" class="chip"/>
+    <text x="982" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#3776ab">PY</text>
+    <rect x="1020" y="365" width="60" height="42" rx="12" class="chip"/>
+    <text x="1050" y="391" text-anchor="middle" font-size="13" font-weight="700" fill="#e25a1c">SPARK</text>
+    <rect x="1088" y="365" width="70" height="42" rx="12" class="chip"/>
+    <text x="1123" y="391" text-anchor="middle" font-size="13" font-weight="700" fill="#0b7fca">SQL</text>
+    <rect x="952" y="415" width="60" height="42" rx="12" class="chip"/>
+    <text x="982" y="441" text-anchor="middle" font-size="12" font-weight="700" fill="#c99500">PBI</text>
+    <rect x="1020" y="415" width="60" height="42" rx="12" class="chip"/>
+    <text x="1050" y="441" text-anchor="middle" font-size="10" font-weight="700" fill="#e33b31">DBX</text>
+    <rect x="1088" y="415" width="70" height="42" rx="12" class="chip"/>
+    <text x="1123" y="441" text-anchor="middle" font-size="12" font-weight="700" fill="#f05032">GIT</text>
+  </g>
+
+  <line x1="952" y1="493" x2="1158" y2="493" stroke="#e3eaed"/>
+  <text x="952" y="522" class="sub">PORTFOLIO</text>
+  <text x="952" y="544" font-size="13" font-weight="700" fill="#1f343d">datapassj.com</text>
+  <text x="952" y="579" class="sub">GITHUB</text>
+  <text x="952" y="601" font-size="13" font-weight="700" fill="#1f343d">julian-passebecq</text>
+</svg>
