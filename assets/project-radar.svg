@@ -1,198 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500" role="img" aria-labelledby="title desc">
   <title id="title">Julian Passebecq project radar</title>
-  <desc id="desc">Static GitHub profile preview of a data, BI and cloud project portfolio. Click the image in the README to open the interactive portfolio.</desc>
+  <desc id="desc">Lightweight animated profile radar covering cloud architecture, machine learning, SQL and data engineering, BI, Microsoft cloud news, developer tooling and D3 visual data.</desc>
   <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#16303d" flood-opacity="0.09"/>
-    </filter>
     <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#16303d" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#17313d" flood-opacity="0.07"/>
     </filter>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f7fafb"/>
-      <stop offset="1" stop-color="#eef3f5"/>
+    <linearGradient id="azure" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b63b6"/>
+      <stop offset="1" stop-color="#35b7e8"/>
     </linearGradient>
-    <linearGradient id="mlg" x1="155" y1="170" x2="224" y2="238" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2f80ed"/>
+    <linearGradient id="ml" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3776ab"/>
       <stop offset="1" stop-color="#27ae60"/>
-    </linearGradient>
-    <linearGradient id="dbg" x1="165" y1="405" x2="215" y2="468" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1f8acb"/>
-      <stop offset="1" stop-color="#255b8c"/>
     </linearGradient>
     <style>
       text { font-family: Inter, Segoe UI, Arial, sans-serif; }
-      .title { fill:#17242c; font-weight:700; font-size:20px; }
-      .sub { fill:#82939c; font-weight:700; font-size:10px; letter-spacing:1.4px; }
-      .small { fill:#607680; font-size:11px; }
-      .node { fill:#ffffff; stroke:#cfdbdf; stroke-width:1.5; filter:url(#soft); }
-      .line { fill:none; stroke:#bfd0d7; stroke-width:1.35; }
-      .guide { fill:none; stroke:#e1e9ec; stroke-width:1; }
-      .route-blue { stroke:#7fa6b8; }
-      .route-green { stroke:#84a79a; }
-      .dot-blue { fill:#4f8096; }
-      .dot-green { fill:#6f9386; }
-      .chip { fill:#f6f9fa; stroke:#dce6e9; stroke-width:1; }
+      .label { fill:#17242c; font-size:14px; font-weight:700; }
+      .sub { fill:#8798a1; font-size:8.5px; font-weight:700; letter-spacing:1.1px; }
+      .node { fill:#fff; stroke:#d3dfe3; stroke-width:1.4; filter:url(#soft); }
+      .guide { fill:none; stroke:#e7edef; stroke-width:1; }
+      .route { fill:none; stroke:#b8cbd3; stroke-width:1.45; }
+      .routeGreen { stroke:#91aea3; }
+      .packet { fill:#4f8096; filter:url(#soft); }
+      .packetGreen { fill:#6f9487; }
+      .role { fill:#fff; stroke:#d3dfe3; stroke-width:1.1; filter:url(#soft); }
+      .airflow { transform-box: fill-box; transform-origin:center; animation:spin 4.2s linear infinite; }
+      @keyframes spin { to { transform:rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .airflow { animation:none; } }
     </style>
   </defs>
 
-  <rect width="1200" height="650" rx="28" fill="url(#bg)"/>
-  <rect x="20" y="20" width="885" height="610" rx="24" fill="#fff" stroke="#dce5e8" filter="url(#shadow)"/>
+  <rect x="8" y="8" width="904" height="484" rx="24" fill="#ffffff" stroke="#e0e8eb"/>
 
-  <circle cx="455" cy="325" r="245" class="line"/>
-  <polygon points="455,150 607,238 607,412 455,500 303,412 303,238" class="guide"/>
-  <polygon points="455,205 559,265 559,385 455,445 351,385 351,265" class="guide"/>
-  <polygon points="455,250 520,288 520,362 455,400 390,362 390,288" class="guide"/>
+  <!-- lightweight radar guides -->
+  <circle cx="460" cy="250" r="186" class="route"/>
+  <polygon points="460,115 577,183 577,317 460,385 343,317 343,183" class="guide"/>
+  <polygon points="460,160 538,205 538,295 460,340 382,295 382,205" class="guide"/>
+  <polygon points="460,197 507,224 507,276 460,303 413,276 413,224" class="guide"/>
 
-  <line x1="455" y1="145" x2="455" y2="276" class="line route-blue"/>
-  <line x1="685" y1="238" x2="501" y2="290" class="line route-blue"/>
-  <line x1="685" y1="412" x2="510" y2="362" class="line route-green"/>
-  <line x1="455" y1="505" x2="500" y2="368" class="line route-green"/>
-  <line x1="225" y1="412" x2="397" y2="360" class="line route-blue"/>
-  <line x1="225" y1="238" x2="398" y2="356" class="line route-blue"/>
+  <!-- project routes -->
+  <path id="r1" d="M460 92 L460 196" class="route"/>
+  <path id="r2" d="M657 160 L500 205" class="route"/>
+  <path id="r3" d="M657 340 L500 295" class="route routeGreen"/>
+  <path id="r4" d="M460 410 L500 302" class="route routeGreen"/>
+  <path id="r5" d="M263 340 L420 295" class="route"/>
+  <path id="r6" d="M263 160 L420 295" class="route"/>
 
-  <circle cx="455" cy="216" r="3.5" class="dot-blue"/>
-  <circle cx="455" cy="252" r="3.5" class="dot-blue"/>
-  <circle cx="588" cy="266" r="3.5" class="dot-blue"/>
-  <circle cx="622" cy="256" r="3.5" class="dot-blue"/>
-  <circle cx="593" cy="386" r="3.5" class="dot-green"/>
-  <circle cx="623" cy="397" r="3.5" class="dot-green"/>
-  <circle cx="496" cy="411" r="3.5" class="dot-green"/>
-  <circle cx="390" cy="381" r="3.5" class="dot-blue"/>
-  <circle cx="359" cy="390" r="3.5" class="dot-blue"/>
+  <!-- animated packets; GitHub can render native SVG animation in browsers, while static clients simply show the radar -->
+  <circle r="3.2" class="packet"><animateMotion dur="4.1s" repeatCount="indefinite" path="M460 92 L460 196"/></circle>
+  <circle r="3.2" class="packet"><animateMotion dur="4.6s" begin="-1.4s" repeatCount="indefinite" path="M657 160 L500 205"/></circle>
+  <circle r="3.2" class="packet packetGreen"><animateMotion dur="4.4s" begin="-.7s" repeatCount="indefinite" path="M657 340 L500 295"/></circle>
+  <circle r="3.2" class="packet packetGreen"><animateMotion dur="4.8s" begin="-2s" repeatCount="indefinite" path="M460 410 L500 302"/></circle>
+  <circle r="3.2" class="packet"><animateMotion dur="4.5s" begin="-2.7s" repeatCount="indefinite" path="M263 340 L420 295"/></circle>
+  <circle r="3.2" class="packet"><animateMotion dur="4.7s" begin="-1.8s" repeatCount="indefinite" path="M263 160 L420 295"/></circle>
 
-  <!-- outer 01 D3 -->
-  <circle cx="455" cy="545" r="48" class="node"/>
-  <text x="455" y="552" text-anchor="middle" font-size="29" font-weight="800" fill="#ef7d43">D3</text>
-  <text x="455" y="607" text-anchor="middle" class="title" font-size="15">D3 Eco Site</text>
-  <text x="455" y="624" text-anchor="middle" class="sub">VISUAL DATA</text>
+  <!-- 03 Architecture / Azure -->
+  <circle cx="460" cy="64" r="38" class="node"/>
+  <path d="M449 87 L463 41 L477 87 L468 87 L463 75 L454 75 L450 87Z" fill="url(#azure)"/>
+  <path d="M463 41 L477 87 L470 87 L457 68Z" fill="#2eb4e6" opacity=".9"/>
+  <text x="460" y="113" text-anchor="middle" class="label">Architecture Web</text>
+  <text x="460" y="127" text-anchor="middle" class="sub">CLOUD ARCHITECTURE</text>
 
-  <!-- outer 02 ML: model pipeline / network rather than a library logo -->
-  <circle cx="190" cy="205" r="48" class="node"/>
-  <rect x="156" y="171" width="68" height="68" rx="18" fill="#f5fafc"/>
-  <path d="M164 187h10M164 205h10M164 223h10" stroke="#8ba3af" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="181" cy="187" r="4.5" fill="#56ccf2"/>
-  <circle cx="181" cy="223" r="4.5" fill="#56ccf2"/>
-  <circle cx="196" cy="197" r="4.5" fill="url(#mlg)"/>
-  <circle cx="196" cy="214" r="4.5" fill="url(#mlg)"/>
-  <circle cx="213" cy="205" r="5.2" fill="#245c73"/>
-  <path d="M185 187l7 7M185 223l7-6M185 187l7 23M185 223l7-22M200 197l8 5M200 214l8-6" stroke="#617f8c" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M163 232l11-9 10 5 13-13 10 5 11-14" fill="none" stroke="url(#mlg)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="190" y="269" text-anchor="middle" class="title" font-size="15">ML / Data Science</text>
-  <text x="190" y="286" text-anchor="middle" class="sub">PYTHON · ML</text>
+  <!-- 06 Developer watch -->
+  <circle cx="697" cy="150" r="38" class="node"/>
+  <rect x="677" y="132" width="40" height="36" rx="8" fill="#eff7fd"/>
+  <path d="M687 142 l-9 8 9 8 M707 142 l9 8-9 8" fill="none" stroke="#0877c9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M702 137 l-10 26" stroke="#36a9e1" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="697" y="200" text-anchor="middle" class="label">Code Updates Site</text>
+  <text x="697" y="214" text-anchor="middle" class="sub">DEVELOPER WATCH</text>
 
-  <!-- outer 03 Architecture -->
-  <circle cx="455" cy="104" r="48" class="node"/>
-  <path d="M441 133 L459 76 L475 133 L463 133 L459 118 L447 118 L443 133Z" fill="#0877c9"/>
-  <path d="M459 76 L475 133 L465 133 L451 111Z" fill="#39b7e8" opacity="0.95"/>
-  <text x="455" y="166" text-anchor="middle" class="title" font-size="15">Architecture Web</text>
-  <text x="455" y="183" text-anchor="middle" class="sub">CLOUD ARCHITECTURE</text>
+  <!-- 04 Microsoft cloud news -->
+  <circle cx="697" cy="350" r="38" class="node"/>
+  <rect x="681" y="334" width="14" height="14" fill="#f35325"/>
+  <rect x="699" y="334" width="14" height="14" fill="#81bc06"/>
+  <rect x="681" y="352" width="14" height="14" fill="#05a6f0"/>
+  <rect x="699" y="352" width="14" height="14" fill="#ffba08"/>
+  <text x="697" y="400" text-anchor="middle" class="label">Microsoft / Cloud News</text>
+  <text x="697" y="414" text-anchor="middle" class="sub">PRODUCT WATCH</text>
 
-  <!-- outer 04 Microsoft news -->
-  <circle cx="720" cy="435" r="48" class="node"/>
-  <rect x="700" y="415" width="17" height="17" fill="#f35325"/>
-  <rect x="722" y="415" width="17" height="17" fill="#81bc06"/>
-  <rect x="700" y="437" width="17" height="17" fill="#05a6f0"/>
-  <rect x="722" y="437" width="17" height="17" fill="#ffba08"/>
-  <text x="720" y="498" text-anchor="middle" class="title" font-size="15">Microsoft / Cloud News</text>
-  <text x="720" y="515" text-anchor="middle" class="sub">PRODUCT WATCH</text>
+  <!-- 01 D3 visual data -->
+  <circle cx="460" cy="436" r="38" class="node"/>
+  <text x="460" y="444" text-anchor="middle" font-size="24" font-weight="800" fill="#ef7d43">D3</text>
+  <text x="460" y="482" text-anchor="middle" class="label">D3 Eco Site</text>
 
-  <!-- outer 05 SQL trainer: database + terminal -->
-  <circle cx="190" cy="435" r="48" class="node"/>
-  <rect x="155" y="400" width="70" height="70" rx="18" fill="#f5fafc"/>
-  <ellipse cx="180" cy="416" rx="15" ry="6" fill="#d8eef8" stroke="#2d789c" stroke-width="2.5"/>
-  <path d="M165 416v24c0 4.5 6.8 8 15 8s15-3.5 15-8v-24" fill="url(#dbg)"/>
-  <path d="M165 428c0 4.5 6.8 8 15 8s15-3.5 15-8" fill="none" stroke="#bfe1f0" stroke-width="2"/>
-  <rect x="184" y="426" width="31" height="25" rx="7" fill="#fff" stroke="#5e7f8d" stroke-width="2.5"/>
-  <path d="M194 434l-5 4.5 5 4.5M205 434l5 4.5-5 4.5" fill="none" stroke="#2f80ed" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M197 447h7" stroke="#27ae60" stroke-width="2.7" stroke-linecap="round"/>
-  <text x="190" y="498" text-anchor="middle" class="title" font-size="15">LeetCode Trainer</text>
-  <text x="190" y="515" text-anchor="middle" class="sub">SQL · DATA ENGINEERING</text>
+  <!-- 05 SQL / data-engineering trainer -->
+  <circle cx="223" cy="350" r="38" class="node"/>
+  <ellipse cx="215" cy="338" rx="13" ry="5" fill="#d9eef8" stroke="#2c789c" stroke-width="2"/>
+  <path d="M202 338v19c0 4 6 7 13 7s13-3 13-7v-19" fill="#27759a" opacity=".94"/>
+  <rect x="216" y="345" width="25" height="19" rx="5" fill="#fff" stroke="#5d7d8b" stroke-width="2"/>
+  <path d="M224 350l-4 4 4 4M233 350l4 4-4 4" fill="none" stroke="#2f80ed" stroke-width="2" stroke-linecap="round"/>
+  <text x="223" y="400" text-anchor="middle" class="label">SQL Trainer</text>
+  <text x="223" y="414" text-anchor="middle" class="sub">SQL · DATA ENGINEERING</text>
 
-  <!-- outer 06 developer watch -->
-  <circle cx="720" cy="205" r="48" class="node"/>
-  <path d="M698 205 l12-10 v20z M710 195 l23-16 v52 l-23-16z M733 179 l9 5v42l-9 5z" fill="#0b7fca"/>
-  <text x="720" y="269" text-anchor="middle" class="title" font-size="15">Code Updates Site</text>
-  <text x="720" y="286" text-anchor="middle" class="sub">DEVELOPER WATCH</text>
+  <!-- 02 ML / Data Science: neutral model icon, not a library logo -->
+  <circle cx="223" cy="150" r="38" class="node"/>
+  <circle cx="210" cy="140" r="4.5" fill="#3776ab"/>
+  <circle cx="210" cy="160" r="4.5" fill="#3776ab"/>
+  <circle cx="224" cy="132" r="4.5" fill="#56ccf2"/>
+  <circle cx="224" cy="150" r="4.5" fill="#2f80ed"/>
+  <circle cx="224" cy="168" r="4.5" fill="#56ccf2"/>
+  <circle cx="239" cy="150" r="5" fill="#27ae60"/>
+  <path d="M214 140l6-6M214 140l6 9M214 160l6-9M214 160l6 6M228 132l7 15M228 150h6M228 168l7-15" stroke="#6d8792" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M207 173l9-7 8 4 10-10 9 5" fill="none" stroke="url(#ml)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="223" y="200" text-anchor="middle" class="label">ML / Data Science</text>
+  <text x="223" y="214" text-anchor="middle" class="sub">PYTHON · ML</text>
 
-  <!-- center portfolio -->
-  <circle cx="455" cy="335" r="42" class="node"/>
-  <rect x="432" y="322" width="46" height="30" rx="5" fill="none" stroke="#315666" stroke-width="3"/>
-  <path d="M442 322 v-7 c0-6 5-10 11-10h4c6 0 11 4 11 10v7" fill="none" stroke="#315666" stroke-width="3"/>
-  <path d="M432 334 c12 6 34 6 46 0" fill="none" stroke="#315666" stroke-width="2"/>
-  <rect x="451" y="333" width="8" height="6" rx="1.5" fill="#315666"/>
-  <text x="455" y="392" text-anchor="middle" class="title" font-size="14">Main Portfolio</text>
+  <!-- center competency nodes -->
+  <rect x="441" y="181" width="38" height="38" rx="12" class="role"/>
+  <path d="M450 211 L461 188 L472 211 L466 211 L461 201 L456 211Z" fill="#0877c9"/>
 
-  <!-- competency nodes -->
-  <rect x="430" y="256" width="50" height="50" rx="15" class="node"/>
-  <path d="M441 295 L455 267 L470 295 L461 295 L455 282 L449 295Z" fill="#0877c9"/>
+  <rect x="392" y="286" width="38" height="38" rx="12" class="role"/>
+  <ellipse cx="411" cy="297" rx="10" ry="4" fill="#0b7fca"/>
+  <path d="M401 297v12c0 3 4 5 10 5s10-2 10-5v-12" fill="#0b7fca" opacity=".9"/>
+  <text x="411" y="309" text-anchor="middle" font-size="6.8" fill="#fff" font-weight="700">SQL</text>
 
-  <rect x="365" y="360" width="50" height="50" rx="15" class="node"/>
-  <ellipse cx="390" cy="376" rx="13" ry="5" fill="#0b7fca"/>
-  <path d="M377 376v17c0 4 6 7 13 7s13-3 13-7v-17" fill="#0b7fca" opacity="0.85"/>
-  <text x="390" y="393" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">SQL</text>
+  <rect x="490" y="286" width="38" height="38" rx="12" class="role"/>
+  <rect x="500" y="302" width="5" height="10" rx="1.5" fill="#f2c811"/>
+  <rect x="507" y="296" width="5" height="16" rx="1.5" fill="#e7b40f"/>
+  <rect x="514" y="290" width="5" height="22" rx="1.5" fill="#d99b00"/>
 
-  <rect x="495" y="360" width="50" height="50" rx="15" class="node"/>
-  <rect x="508" y="382" width="7" height="13" rx="2" fill="#f2c811"/>
-  <rect x="517" y="374" width="7" height="21" rx="2" fill="#e7b40f"/>
-  <rect x="526" y="365" width="7" height="30" rx="2" fill="#d99b00"/>
+  <!-- portfolio core -->
+  <circle cx="460" cy="258" r="34" class="node"/>
+  <rect x="441" y="249" width="38" height="24" rx="4" fill="none" stroke="#315666" stroke-width="2.6"/>
+  <path d="M449 249v-6c0-5 4-8 9-8h4c5 0 9 3 9 8v6" fill="none" stroke="#315666" stroke-width="2.6"/>
+  <path d="M441 258c10 5 28 5 38 0" fill="none" stroke="#315666" stroke-width="1.8"/>
+  <rect x="457" y="257" width="7" height="5" rx="1" fill="#315666"/>
+  <text x="460" y="306" text-anchor="middle" class="label" font-size="12.5">Portfolio</text>
 
-  <!-- airflow accent -->
-  <circle cx="455" cy="426" r="25" fill="#fff" stroke="#d4e0e4" filter="url(#soft)"/>
-  <path d="M455 425 L449 406 Q455 401 461 406 L458 425Z" fill="#00a6c7"/>
-  <path d="M457 426 L476 420 Q481 426 476 432 L458 429Z" fill="#2468a2"/>
-  <path d="M455 428 L461 447 Q455 452 449 447 L452 429Z" fill="#48a16f"/>
-  <path d="M453 426 L434 432 Q429 426 434 420 L452 423Z" fill="#d95c5c"/>
-  <circle cx="455" cy="426" r="4" fill="#fff" stroke="#536e79"/>
-
-  <!-- right business card -->
-  <rect x="930" y="20" width="250" height="610" rx="24" fill="#fff" stroke="#dce5e8" filter="url(#shadow)"/>
-  <rect x="952" y="48" width="48" height="48" rx="14" fill="#f6f9fa" stroke="#dce6e9"/>
-  <text x="976" y="78" text-anchor="middle" font-weight="700" font-size="16" fill="#4f7585">JP</text>
-  <text x="1017" y="70" class="title" font-size="17">Julian Passebecq</text>
-  <text x="1017" y="89" class="small">Data Engineering · BI · Cloud</text>
-  <line x1="952" y1="116" x2="1158" y2="116" stroke="#e3eaed"/>
-
-  <rect x="952" y="136" width="206" height="54" rx="14" class="chip"/>
-  <rect x="966" y="151" width="24" height="24" rx="7" fill="#fff7cf"/>
-  <rect x="972" y="163" width="4" height="8" rx="1" fill="#f2c811"/>
-  <rect x="978" y="157" width="4" height="14" rx="1" fill="#e7b40f"/>
-  <rect x="984" y="152" width="4" height="19" rx="1" fill="#d99b00"/>
-  <text x="1002" y="157" font-size="12" font-weight="700" fill="#425c67">BI</text>
-  <text x="1002" y="175" font-size="10" fill="#778b94">Power BI · DAX · Insights</text>
-
-  <rect x="952" y="200" width="206" height="54" rx="14" class="chip"/>
-  <rect x="966" y="215" width="24" height="24" rx="7" fill="#eaf5fc"/>
-  <path d="M971 233 L978 218 L986 233 L981 233 L978 226 L975 233Z" fill="#0877c9"/>
-  <text x="1002" y="221" font-size="12" font-weight="700" fill="#425c67">Cloud</text>
-  <text x="1002" y="239" font-size="10" fill="#778b94">Azure · Architecture · Data</text>
-
-  <rect x="952" y="264" width="206" height="54" rx="14" class="chip"/>
-  <rect x="966" y="279" width="24" height="24" rx="7" fill="#eef7fb"/>
-  <ellipse cx="978" cy="286" rx="7" ry="3" fill="#0b7fca"/>
-  <path d="M971 286v10c0 2 3 4 7 4s7-2 7-4v-10" fill="#0b7fca"/>
-  <text x="1002" y="285" font-size="12" font-weight="700" fill="#425c67">Analyst / Data</text>
-  <text x="1002" y="303" font-size="10" fill="#778b94">SQL · Models · Decisions</text>
-
-  <text x="952" y="350" class="sub">CODING · DATA STACK</text>
-  <g>
-    <rect x="952" y="365" width="60" height="42" rx="12" class="chip"/>
-    <text x="982" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#3776ab">PY</text>
-    <rect x="1020" y="365" width="60" height="42" rx="12" class="chip"/>
-    <text x="1050" y="391" text-anchor="middle" font-size="13" font-weight="700" fill="#e25a1c">SPARK</text>
-    <rect x="1088" y="365" width="70" height="42" rx="12" class="chip"/>
-    <text x="1123" y="391" text-anchor="middle" font-size="13" font-weight="700" fill="#0b7fca">SQL</text>
-    <rect x="952" y="415" width="60" height="42" rx="12" class="chip"/>
-    <text x="982" y="441" text-anchor="middle" font-size="12" font-weight="700" fill="#c99500">PBI</text>
-    <rect x="1020" y="415" width="60" height="42" rx="12" class="chip"/>
-    <text x="1050" y="441" text-anchor="middle" font-size="10" font-weight="700" fill="#e33b31">DBX</text>
-    <rect x="1088" y="415" width="70" height="42" rx="12" class="chip"/>
-    <text x="1123" y="441" text-anchor="middle" font-size="12" font-weight="700" fill="#f05032">GIT</text>
+  <!-- Airflow accent -->
+  <g class="airflow">
+    <path d="M460 331 L455 317 Q460 313 465 317 L462 331Z" fill="#00a6c7"/>
+    <path d="M462 333 L476 328 Q480 333 476 338 L462 335Z" fill="#2468a2"/>
+    <path d="M460 335 L465 349 Q460 353 455 349 L458 335Z" fill="#48a16f"/>
+    <path d="M458 333 L444 338 Q440 333 444 328 L458 331Z" fill="#d95c5c"/>
+    <circle cx="460" cy="333" r="3.4" fill="#fff" stroke="#526f7b"/>
   </g>
-
-  <line x1="952" y1="493" x2="1158" y2="493" stroke="#e3eaed"/>
-  <text x="952" y="522" class="sub">PORTFOLIO</text>
-  <text x="952" y="544" font-size="13" font-weight="700" fill="#1f343d">datapassj.com</text>
-  <text x="952" y="579" class="sub">GITHUB</text>
-  <text x="952" y="601" font-size="13" font-weight="700" fill="#1f343d">julian-passebecq</text>
 </svg>
