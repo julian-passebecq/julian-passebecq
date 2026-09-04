@@ -15,16 +15,20 @@
 <h2 align="center">Analytics → BI · SQL → Cloud</h2>
 
 <p align="center">
-  <a href="https://portfoliomainvj1.netlify.app/">
-    <img src="./assets/project-radar.svg" width="100%" alt="Interactive project radar — data, BI, cloud and engineering projects" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://portfoliomainvj1.netlify.app/"><b>Open interactive project radar</b></a>
+  <img src="./assets/project-radar.svg" width="820" alt="Data, BI, SQL and cloud project radar" />
 </p>
 
 <p align="center"><sub>Power BI · SQL · Fabric · Databricks · PySpark · Azure</sub></p>
+
+---
+
+<h2 align="center">Languages</h2>
+
+<p align="center">
+  🇫🇷 <b>Français</b> · C1 &nbsp;&nbsp;|&nbsp;&nbsp;
+  🇬🇧 <b>English</b> · C1 &nbsp;&nbsp;|&nbsp;&nbsp;
+  🇳🇴 <b>Norsk</b> · B2
+</p>
 
 ---
 
