@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="170" viewBox="0 0 420 170" role="img" aria-labelledby="t d">
+  <title id="t">GitHub profile snapshot</title>
+  <desc id="d">Light GitHub profile card showing public repository and engineering focus information.</desc>
+  <rect x="1" y="1" width="418" height="168" rx="14" fill="#ffffff" stroke="#d8e2e6"/>
+  <text x="20" y="31" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#2563eb">GitHub profile</text>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" fill="#415760">
+    <text x="20" y="61">Public repositories</text><text x="390" y="61" text-anchor="end" font-weight="700" fill="#17242c">4</text>
+    <text x="20" y="84">Original public projects</text><text x="390" y="84" text-anchor="end" font-weight="700" fill="#17242c">2</text>
+    <text x="20" y="107">Primary public code</text><text x="390" y="107" text-anchor="end" font-weight="700" fill="#17242c">JavaScript</text>
+    <text x="20" y="130">Work focus</text><text x="390" y="130" text-anchor="end" font-weight="700" fill="#17242c">Data · BI · Cloud</text>
+  </g>
+  <line x1="20" y1="144" x2="400" y2="144" stroke="#edf2f4"/>
+  <text x="20" y="160" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" fill="#8a9aa2">Public profile snapshot · Sep 2026</text>
+</svg>
