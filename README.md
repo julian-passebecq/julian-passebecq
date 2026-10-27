@@ -30,7 +30,12 @@ I use AI-assisted tools in selected development workflows. The linked code, desi
 
 ## Certifications and languages
 
-**Microsoft certifications:** PL-300 — Power BI Data Analyst Associate · DP-600 — Fabric Analytics Engineer Associate.
+Microsoft Learn status checked on **27 October 2026**. Each link opens the official credential record.
+
+| Credential | Status | Official evidence |
+| --- | --- | --- |
+| **DP-600 — Fabric Analytics Engineer Associate** | **Active**, expires 14 March 2027 | [Verify with Microsoft Learn](https://learn.microsoft.com/api/credentials/share/en-us/19704116/F2A6CE71463DE3CF?sharingId=C46C881A4E359386) |
+| **PL-300 — Power BI Data Analyst Associate** | Previously earned 31 October 2023; **expired 1 November 2025** | [View credential history](https://learn.microsoft.com/api/credentials/share/en-us/19704116/C0FE2805DDB338D6?sharingId=C46C881A4E359386) |
 
 **Languages:** French C1 · English C1 · Norwegian Bokmål B2.
 
