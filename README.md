@@ -5,7 +5,7 @@ Oslo, Norway · 5 years of experience across data, BI, and cloud projects
 
 **Focus:** SQL · Power BI / DAX · Microsoft Fabric · Azure · Databricks / PySpark · Python · dbt
 
-[Portfolio](https://datapassj.com/) · [Portfolio PDF](https://datapassj.com/portfolio.pdf) · [LinkedIn](https://www.linkedin.com/in/julian-p95/)
+[Portfolio](https://datapassj.com/) · [LinkedIn](https://www.linkedin.com/in/julian-p95/)
 
 ## Selected public projects
 
