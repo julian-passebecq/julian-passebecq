@@ -1,9 +1,9 @@
 # Julian Passebecq
 
-**Cloud BI Consultant · Data & Analytics Engineering**  
-Oslo, Norway
+**Data Engineer · Azure / Fabric · Applied AI**  
+Geneva area, Switzerland
 
-I build analytics solutions and developer tools that connect data pipelines, SQL, semantic models and clear architecture documentation.
+I work across data pipelines, SQL, Power BI and cloud analytics. More recently, I have built simulation tools and local document-retrieval workflows for renewable-energy R&D. My background spans operational reporting, Azure data integration and applied software engineering.
 
 **Focus:** Power BI / DAX · SQL · Microsoft Fabric · Azure · Databricks / PySpark · Python · dbt
 
@@ -37,7 +37,7 @@ Microsoft Learn status checked on **27 October 2026**. Each link opens the offic
 | **DP-600 — Fabric Analytics Engineer Associate** | **Active**, expires 14 March 2027 | [Verify with Microsoft Learn](https://learn.microsoft.com/api/credentials/share/en-us/19704116/F2A6CE71463DE3CF?sharingId=C46C881A4E359386) |
 | **PL-300 — Power BI Data Analyst Associate** | Previously earned 31 October 2023; **expired 1 November 2025** | [View credential history](https://learn.microsoft.com/api/credentials/share/en-us/19704116/C0FE2805DDB338D6?sharingId=C46C881A4E359386) |
 
-**Languages:** French C1 · English C1 · Norwegian Bokmål B2.
+**Languages:** French (native) · English C1 · Norwegian Bokmål B2.
 
 <details>
 <summary>Illustrative portfolio map</summary>
